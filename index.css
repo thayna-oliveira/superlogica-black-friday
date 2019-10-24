@@ -1,0 +1,323 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+body *,
+html,
+body {
+  font-family: proxima-nova, sans-serif !important;
+  font-style: normal
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+
+
+body {
+  background: #000;
+  color: #fff;
+}
+
+h1 {
+  font-weight: normal;
+}
+
+li {
+  display: flex;
+  font-size: 1.5em;
+  list-style-type: none;
+  text-transform: uppercase;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.countdown_timer__border {
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  border: 1px solid;
+  border-radius: 8px;
+  margin-top: 2rem;
+}
+
+
+a,
+a:hover {
+  text-decoration: none
+}
+
+@media(min-width:992px) {
+  .container {
+    max-width: 1200px
+  }
+}
+
+.hero {
+  position: relative;
+  padding-bottom: 4rem;
+  padding-top: 4rem;
+  font-size: 18px;
+  font-weight: 300;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.down-icon {
+  -webkit-animation: anime 5s;
+  animation: anime .8s infinite;
+  animation-timing-function: ease-out;
+  animation-delay: 400ms;
+  transition: all .2s ease-in-out;
+  width: 100%;
+  text-align: center; 
+  display: block;
+}
+
+@-webkit-keyframes anime {
+  0% {
+    transform: translateY(0)
+  }
+
+  50% {
+    transform: translateY(15px)
+  }
+
+  100% {
+    transform: translateY(0)
+  }
+}
+
+@keyframes anime {
+  0% {
+    transform: translateY(0)
+  }
+
+  50% {
+    transform: translateY(15px)
+  }
+
+  100% {
+    transform: translateY(0)
+  }
+}
+
+.mask-arrow {
+  width: 200px;
+  height: 40px;
+  cursor: pointer;
+  position: absolute
+}
+
+.arrow-bottom {
+  content: "";
+  display: block;
+  height: 8px;
+  width: 8px;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  border-bottom: 3px solid #fff;
+  border-left: 3px solid #fff
+}
+
+nav {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center
+}
+
+nav img {
+  transform: translateY(-5px)
+}
+
+.box-conversao {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  color: #1e232c;
+  box-shadow: 0 0 100px 0 #4b5c61
+}
+
+.box-conversao h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 1rem 2rem 1rem
+}
+
+input {
+  border: 0;
+  height: 48px;
+  font-size: 15px;
+  padding-left: 44px;
+  color: #1e232c;
+  border: solid 1px #c5cee0;
+  border-radius: 4px;
+  background-size: 20px 20px;
+  background-position: 12px 13px;
+  background-repeat: no-repeat;
+  width: 100%
+}
+
+select {
+  border: 0;
+  height: 48px;
+  font-size: 15px;
+  padding-left: 44px;
+  color: #000;
+  border: solid 1px #c5cee0;
+  border-radius: 4px;
+  background-size: 20px 20px;
+  background-position: 12px 13px;
+  background-repeat: no-repeat;
+  width: 100%;
+  -webkit-appearance: none
+}
+
+::placeholder {
+  color: #1e232c !important
+}
+
+input[name=firstname] {
+  background-image: url(https://cdn2.hubspot.net/hubfs/3453052/%5BAssinaturas%5D/Cursos-gratuitos/img/smile.svg)
+}
+
+input[name=email] {
+  background-image: url(https://cdn2.hubspot.net/hubfs/3453052/%5BAssinaturas%5D/Cursos-gratuitos/img/mail.svg)
+}
+
+input[name=phone] {
+  background-image: url(https://cdn2.hubspot.net/hubfs/3453052/%5BAssinaturas%5D/Cursos-gratuitos/img/call.svg)
+}
+
+input[name=company] {
+  background-image: url(https://cdn2.hubspot.net/hubfs/3453052/%5BAssinaturas%5D/Cursos-gratuitos/img/briefcase.svg)
+}
+
+select[name=industry] {
+  background-image: url(https://cdn2.hubspot.net/hubfs/3453052/%5BAssinaturas%5D/Cursos-gratuitos/img/chart-pie.svg);
+  background-image: url(https://cdn2.hubspot.net/hubfs/3453052/%5BAssinaturas%5D/Cursos-gratuitos/img/chart-pie.svg);
+  background-color: #fff
+}
+
+.hs-input.invalid.error {
+  border-color: red
+}
+
+label.hs-error-msg {
+  color: red;
+  left: 0;
+  font-size: 12px;
+  transform: translateY(-3px);
+  margin-bottom: 0
+}
+
+input:focus {
+  border-color: blue;
+  box-shadow: none;
+  outline: 0
+}
+
+.no-list.hs-error-msgs.inputs-list {
+  list-style: none
+}
+
+ul.no-list.hs-error-msgs.inputs-list {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  color: red;
+  padding: 0;
+  margin: 0
+}
+
+label.hs-main-font-element {
+  margin: 0
+}
+
+footer {
+  min-height: 120px;
+  display: flex;
+  flex-wrap: wrap;
+  color: #dedede;
+  align-items: center
+}
+
+footer p,
+footer a {
+  margin: 0;
+  font-size: .95em;
+}
+
+footer span {
+  font-size: .85rem
+}
+
+.hs-button.primary.large {
+  border-radius: 4px;
+  padding: 0;
+  color: #fff;
+  text-transform: none;
+  font-weight: 600;
+  border: 0;
+  transition: 200ms;
+  margin-top: 1.08rem
+}
+
+.hs-button.primary.large:hover {
+  transform: translateY(-2px)
+}
+
+.imobiliarias .hs-button.primary.large,
+.imobiliarias .hs-button.primary.large:hover {
+  box-shadow: 0 15px 15px -15px rgba(214, 29, 30, 0.9);
+  background-color: #d61d1e
+}
+
+.assinaturas .hs-button.primary.large,
+.assinaturas .hs-button.primary.large:hover {
+  box-shadow: 0 15px 15px -15px rgba(255, 113, 61, 0.9);
+  background-color: #ff713d
+}
+
+.educacional .hs-button.primary.large,
+.educacional .hs-button.primary.large:hover {
+  box-shadow: 0 15px 15px -15px rgba(103, 46, 255, 0.9);
+  background-color: #672eff
+}
+
+.condominios .hs-button.primary.large,
+.condominios .hs-button.primary.large:hover {
+  box-shadow: 0 15px 15px -15px rgba(0, 187, 155, 0.9);
+  background-color: #00bb9b
+}
+
+.imobiliarias a:hover {
+  color: #d61d1e
+}
+
+.assinaturas a:hover {
+  color: #ff713d
+}
+
+.educacional a:hover {
+  color: #672eff
+}
+
+.condominios a:hover {
+  color: #00bb9b
+}
